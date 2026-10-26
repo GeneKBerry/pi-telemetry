@@ -1,0 +1,9 @@
+# Compiled executable
+/telemetry
+
+# C++ build files
+*.o
+*.out
+
+# Build directories
+build/

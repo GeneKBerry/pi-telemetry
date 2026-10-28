@@ -7,3 +7,6 @@
 
 # Build directories
 build/
+
+/dashboard
+.vscode/

@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PiBerry Telemetry Station</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="dashboard">
+        <header>
+            <div>
+                <h1>PiBerry Telemetry Station</h1>
+                <p>Raspberry Pi 5 | System Monitoring</p>
+            </div>
+            <span id="status">SIMULATION</span>
+        </header>
+
+        <section class="stats">
+            <div class="stat-card">
+                <h2>CPU Temperature</h2>
+                <div class="reading">
+                    <span id="temperature">--</span>
+                    <span class="unit">°C</span>
+                </div>
+                <p>Live sensor reading</p>
+            </div>
+
+            <div class="stat-card">
+                <h2>Minimum</h2>
+                <div class="reading">
+                    <span id="minimum">--</span>
+                    <span class="unit">°C</span>
+                </div>
+                <p>Lowest recorded temperature</p>
+            </div>
+
+            <div class="stat-card">
+                <h2>Maximum</h2>
+                <div class="reading">
+                    <span id="maximum">--</span>
+                    <span class="unit">°C</span>
+                </div>
+                <p>Highest recorded temperature</p>
+            </div>
+        </section>
+
+        <section class="chart-card">
+            <div class="chart-header">
+                <h2>CPU Temperature History</h2>
+                <span>Last 60 readings</span>
+            </div>
+
+            <canvas id="temperatureChart"></canvas>
+        </section>
+
+        <footer>
+            PiBerry Telemetry | C++ Collector
+        </footer>
+    </main>
+
+    <script src="dashboard.js"></script>
+</body>
+</html>
